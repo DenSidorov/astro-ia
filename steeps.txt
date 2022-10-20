@@ -1,0 +1,41 @@
+https://astro.build/
+
+cd Project
+cd astro-ia
+npm create astro@latest
+Need to install the following packages:
+  create-astro@1.1.0
+Ok to proceed? (y) y
+
+Welcome to Astro! (create-astro v1.1.0)
+Lets walk through setting up your new Astro project.
+
+✔ Where would you like to create your new project? … .
+✔ Which template would you like to use? › Empty project
+✔ Template copied!
+✔ Would you like to install npm dependencies? (recommended) … yes
+✔ Packages installed!
+✔ Would you like to initialize a new git repository? (optional) … no
+ℹ Sounds good! You can come back and run git init later.
+✔ How would you like to setup TypeScript? › Relaxed
+✔ TypeScript settings applied!
+✔ Setup complete.
+✔ Ready for liftoff!
+
+ Next steps 
+
+You can now cd into the  project directory.
+Run npm run dev to start the Astro dev server. CTRL-C to close.
+Add frameworks like react and tailwind to your project using astro add
+
+Stuck? Come join us at https://astro.build/chat
+Good luck out there, astronaut.
+
+
+npx astro add tailwind
+npx astro add preact
+
+npm run build генерирует продакшн сборку
+Запускаем:
+cd dist
+PORT=8080 npx serve

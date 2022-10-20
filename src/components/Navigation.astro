@@ -1,0 +1,34 @@
+---
+const links = [
+    { url: '/', title: "Home"},
+    { url: '/about', title: "About"},
+    { url: '/products', title: "Products"}
+]
+---
+
+
+<nav class="flex h-[50px] absolute top-0 left-0 right-0 bg-gray-400 text-white px-4 items-center justify-between">
+    <h2 class="font-bold" >Astro site</h2>
+
+    <ul class="list-none flex">
+        <!-- <li>
+            <a class="mx-2" href="/">Home</a>
+        </li>
+        <li>
+            <a href="/about">About</a>
+        </li> 
+        Это можно сделать через циклы:         -->
+        { links.map(link => <li class="mx-2"><a href={link.url}>{link.title}</a></li>) }
+    </ul>
+</nav>
+
+<!-- <style>
+    nav {
+        position: absolute;
+        top: 0;
+        height: 50px;
+        right: 0;
+        left: 0;
+        background: #aaa;
+    }
+</style> -->

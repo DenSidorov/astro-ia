@@ -1,0 +1,18 @@
+---
+import Visible from "../components/Visible";
+import Layout from "../layouts/Layout.astro";
+
+const date = new Date()
+const color = 'red'
+---
+
+<Layout title="Main">
+
+<h1 class="text-center text-2xl font-bold">Main page</h1>
+
+{ 40 + 2 } <br>
+<span style={{ color }}>{ date.toDateString() }</span>  <!--т.к. ключ и значение совпадают (color:color) можно указывать только ключ -->
+
+<Visible client:visible /> <!--подгружается при фокусе -->
+
+</Layout>
